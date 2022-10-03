@@ -12,15 +12,11 @@ Example: (input --> output)
 "GTAT" --> "CATA" */
 
 
-function DNAStrand(dna){
-    for(let i = 0; i = dna.length; i++ ){
-        if(i === "A"){
-            return "T"
-        }else if( i === "T"){
-            return "A"
-        }else if( i === "C"){
-            return "G"
-        }else ( i === "G")
-        return "C"
+function DNAStrand(dna) {
+    var letters = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'};
+    var arr = [];
+    for (var i=0; i < dna.length; i++) {
+        arr[i] = letters[dna[i]];
     }
+    return arr.join('');
 }
