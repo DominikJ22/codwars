@@ -5,3 +5,7 @@ Save the animals by switching them back. You will be given an array which will h
 Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
 
 Simples!*/
+
+function fixTheMeerkat(arr) {
+ return arr.reverse()//your code here 
+}
