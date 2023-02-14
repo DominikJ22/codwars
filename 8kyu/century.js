@@ -11,15 +11,11 @@ Examples
 2000 --> 20 */
 
 function century(year) {
-    if(1600 <= year && 1699 >= year){
-      return 17
-    } else if (1700 <= year && 1799 >= year){
-      return 18
-    } else if (1900 <= year && 1999 >= year){
-      return 19
-    }else if (2000 <= year){
-      return 20
-    } else{
-      return 1
+    let result = 0;
+    for (let i = 0; i < year; i++) {
+      if (i % 100 === 0) {
+        result++;
+      }
     }
-   }
+    return result;
+  }
